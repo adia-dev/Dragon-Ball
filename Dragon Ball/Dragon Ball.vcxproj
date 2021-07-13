@@ -145,13 +145,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Animator.cpp" />
+    <ClCompile Include="AssetManager.cpp" />
     <ClCompile Include="Character.cpp" />
     <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="Vegito.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Animator.h" />
+    <ClInclude Include="AssetManager.h" />
     <ClInclude Include="Character.h" />
     <ClInclude Include="GameManager.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="Vegito.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
