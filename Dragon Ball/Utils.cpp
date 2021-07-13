@@ -23,13 +23,13 @@ float Utils::magnitude(const sf::Vector2<T> v)
 	return std::sqrt(v.x * v.x + v.y * v.y);
 }
 
-template<typename T>
-sf::Vector2<T> Utils::normalize(const sf::Vector2<T> v)
+
+sf::Vector2f Utils::normalize(const sf::Vector2f v)
 {
 	auto vMag = magnitude(v);
 	if (vMag <= 0.f)
 		return v;
-	return sf::Vector2<T>(v.x / vMag, v.y / vMag);
+	return sf::Vector2f(v.x / vMag, v.y / vMag);
 }
 
 template<typename T>

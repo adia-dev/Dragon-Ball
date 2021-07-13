@@ -32,8 +32,7 @@ public:
 	template<typename T>
 	static float magnitude(const sf::Vector2<T> v);
 
-	template<typename T>
-	static sf::Vector2<T> normalize(const sf::Vector2<T> v);
+	static sf::Vector2f normalize(const sf::Vector2f v);
 
 	template<typename T>
 	static T lerp(const T& a, const T& b, const T& t);

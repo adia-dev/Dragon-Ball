@@ -16,18 +16,29 @@ public:
 
 private:
 
+	void init();
+
 	inline void updateDeltaTime();
 	void handleEvents();
+	void checkInputs();
 	void update();
 	void render();
 
 	void quit();
 
+	inline bool keyPressed(sf::Keyboard::Key key)
+	{
+		return sf::Keyboard::isKeyPressed(key);
+	}
+
 	// Variables
 	sf::RenderWindow* _window = nullptr;
+	sf::RectangleShape _ground;
 	sf::Clock _clock;
 	sf::Time _deltaTime;
 	sf::Text _uiText;
+
+	std::map<std::string, bool> _keyMap;
 
 	bool _isPlaying = true;
 	int _updateCnt = 0;
@@ -39,5 +50,7 @@ private:
 	AssetManager _manager;
 
 	Vegito _vegito;
+	Character _test;
+	std::vector<Character*> _characters;
 };
 

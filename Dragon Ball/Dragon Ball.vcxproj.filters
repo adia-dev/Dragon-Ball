@@ -43,7 +43,7 @@
       <Filter>Mysc</Filter>
     </ClCompile>
     <ClCompile Include="Vegito.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Characters</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -63,7 +63,7 @@
       <Filter>Mysc</Filter>
     </ClInclude>
     <ClInclude Include="Vegito.h">
-      <Filter>Header Files</Filter>
+      <Filter>Characters</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

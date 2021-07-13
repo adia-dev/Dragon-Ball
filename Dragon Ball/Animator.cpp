@@ -18,10 +18,91 @@ Animation* Animator::CreateAnimation(const std::string& name, std::vector<sf::In
 	_animations[name] = Animation(frames, frameDuration, isLoop, isLocked);
 
 	if (_currentAnimation == nullptr) {
-		SetAnimation(&_animations[name]);
+		playAnimation(&_animations[name]);
 	}
 
 	return &_animations[name];
+}
+
+void Animator::playAnimation(Animation* animation, bool isLoop, bool isLocked)
+{
+
+
+	if (_currentAnimation != nullptr ) {
+		if (_currentAnimation == animation) {
+			_currentAnimation->isPlaying = true;
+			return;
+		}
+
+		if (_currentAnimation->isLocked)
+			return;
+	}
+
+	_currentAnimation = animation;
+	if (_currentAnimation != nullptr) {
+		_currentFrame = 0;
+		_animationTimer = 0.f;
+		_currentAnimation->isPlaying = true;
+		_currentAnimation->isLocked = isLocked;
+		_currentAnimation->isLoop = isLoop;
+		forceUpdateAnimation();
+	}
+}
+
+void Animator::playAnimation(const std::string& name, bool isLoop, bool isLocked)
+{
+	if (_currentAnimation != nullptr && _currentAnimation->isLocked) return;
+
+	auto animation = _animations.find(name);
+	if (animation != _animations.end())
+	{
+		if (_currentAnimation == &animation->second) {
+			_currentAnimation->isPlaying = true;
+			return;
+		}
+
+		_currentAnimation = &animation->second;
+		if (_currentAnimation != nullptr) {
+			_currentFrame = 0;
+			_animationTimer = 0.f;
+			_currentAnimation->isPlaying = true;
+			_currentAnimation->isLocked = isLocked;
+			_currentAnimation->isLoop = isLoop;
+			forceUpdateAnimation();
+		}
+	}
+}
+
+void Animator::playComboAnimation(const std::string& name, int* comboIndex, bool isLoop, bool isLocked)
+{
+	if (_currentAnimation != nullptr && _currentAnimation->isLocked) return;
+
+	auto animation = _animations.find(name);
+	if (animation != _animations.end())
+	{
+		if (_currentAnimation == &animation->second) {
+			_currentAnimation->isPlaying = true;
+			return;
+		}
+
+		_currentAnimation = &animation->second;
+		if (_currentAnimation != nullptr) {
+			_currentFrame = 0;
+			_animationTimer = 0.f;
+			_currentAnimation->isPlaying = true;
+			_currentAnimation->isLocked = isLocked;
+			_currentAnimation->isLoop = isLoop;
+			forceUpdateAnimation();
+		}
+	}
+}
+
+void Animator::flip(bool status)
+{
+	if (_currentAnimation != nullptr) {
+		_currentAnimation->isFlipped = status;
+		forceUpdateAnimation();
+	}
 }
 
 void Animator::update(const float& deltaTime)
@@ -30,23 +111,45 @@ void Animator::update(const float& deltaTime)
 	if (_currentAnimation == nullptr) return;
 
 	_animationTimer += deltaTime;
-}
 
-
-void Animator::SetAnimation(Animation* animation)
-{
-	_currentAnimation = animation;
-	forceUpdateAnimation();
-}
-
-void Animator::SetAnimation(const std::string& name)
-{
-	auto animation = _animations.find(name);
-	if (animation != _animations.end())
+	// If the animation timer is greater than the desired frame duration, go to the next frame
+	if (_animationTimer >= _currentAnimation->frameDuration)
 	{
-		_currentAnimation = &animation->second;
-		forceUpdateAnimation();
+		_currentFrame++;
+		_animationTimer = 0.f;
+
+		// Check the currentFrame index so we don't go out of bounds
+		if (_currentFrame >= _currentAnimation->frames.size())
+		{
+			if (_currentAnimation->isLoop)
+			{
+				// If we want to repeat certain frames for a certain count, or forever execute this
+				if (_currentAnimation->getRepeatFrames() && _currentAnimation->desiredRepeatAnimationCnt != _currentAnimation->repeatAnimationCnt)
+				{
+					_currentFrame = _currentAnimation->repeatFramesBegin;
+					_currentAnimation->repeatAnimationCnt++;
+				}
+				else {
+					_currentFrame = 0;
+				}
+			}
+			else {
+				// set the index to be the last frame of the animation
+				_currentFrame = _currentAnimation->frames.size() - 1;
+				_currentAnimation->isLocked = false;
+			}
+		}
+
+
+		// If the animation is flipped, pick a frame from the flippedFrames collection
+		const auto& frame = (_currentAnimation->isFlipped ? _currentAnimation->flippedFrames[_currentFrame] : _currentAnimation->frames[_currentFrame]);
+
+		_s.setTextureRect(frame);
+		//_s.setOrigin(frame.width / 2.f, frame.height / 2.f);
+		_s.setOrigin(frame.width / 2.f, frame.height);
+
 	}
+
 }
 
 
@@ -54,10 +157,10 @@ void Animator::forceUpdateAnimation()
 {
 	if (_currentAnimation == nullptr) return;
 
-	const auto& frame = _currentAnimation->frames[_currentFrame];
-
+	const auto& frame = (_currentAnimation->isFlipped ? _currentAnimation->flippedFrames[_currentFrame] : _currentAnimation->frames[_currentFrame]);
 	_s.setTextureRect(frame);
 	//_s.setOrigin(frame.width / 2.f, frame.height / 2.f);
+	_s.setOrigin(frame.width / 2.f, frame.height);
 
 }
 

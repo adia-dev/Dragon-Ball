@@ -1,0 +1,130 @@
+<!DOCTYPE SpriteDecomposer>
+<sprites image="gok_ssg.png" transparentColor="FFFFFF">
+ <animation title="Idle_1" delay="150">
+  <cut w="30" x="37" y="129" h="51" row="1" col="1"/>
+ </animation>
+ <animation title="Idle_Powered" delay="150">
+  <cut w="75" x="38" y="349" h="72" row="1" col="1"/>
+  <cut w="71" x="124" y="350" h="71" row="1" col="1"/>
+ </animation>
+ <animation title="Taunt" delay="150">
+  <cut w="30" x="74" y="128" h="52" row="1" col="1"/>
+  <cut w="26" x="153" y="130" h="50" row="1" col="1"/>
+  <cut w="30" x="188" y="131" h="49" row="1" col="1"/>
+  <cut w="75" x="38" y="349" h="72" row="1" col="1"/>
+  <cut w="72" x="123" y="350" h="71" row="1" col="1"/>
+  <cut w="75" x="38" y="349" h="72" row="1" col="1"/>
+  <cut w="72" x="123" y="350" h="71" row="1" col="1"/>
+  <cut w="75" x="38" y="349" h="72" row="1" col="1"/>
+  <cut w="72" x="123" y="350" h="71" row="1" col="1"/>
+ </animation>
+ <animation title="Dash" delay="150">
+  <cut w="33" x="320" y="135" h="45" row="1" col="1"/>
+  <cut w="51" x="369" y="144" h="29" row="1" col="1"/>
+  <cut w="51" x="426" y="148" h="22" row="1" col="1"/>
+ </animation>
+ <animation title="Up" delay="150">
+  <cut w="32" x="82" y="206" h="53" row="1" col="1"/>
+ </animation>
+ <animation title="Idle_Fly" delay="150">
+  <cut w="33" x="122" y="202" h="48" row="1" col="1"/>
+ </animation>
+ <animation title="Down" delay="150">
+  <cut w="28" x="167" y="203" h="54" row="1" col="1"/>
+ </animation>
+ <animation title="Land" delay="150">
+  <cut w="32" x="207" y="207" h="55" row="1" col="1"/>
+  <cut w="33" x="249" y="221" h="41" row="1" col="1"/>
+ </animation>
+ <animation title="Right_Ground" delay="150">
+  <cut w="32" x="298" y="220" h="42" row="1" col="1"/>
+  <cut w="46" x="340" y="219" h="39" row="1" col="1"/>
+ </animation>
+ <animation title="Left_Ground" delay="150">
+  <cut w="32" x="298" y="220" h="42" row="1" col="1"/>
+  <cut w="36" x="399" y="216" h="46" row="1" col="1"/>
+ </animation>
+ <animation title="Teleport" delay="150">
+  <cut w="33" x="444" y="214" h="48" row="1" col="1"/>
+  <cut w="33" x="490" y="214" h="48" row="1" col="1"/>
+  <cut w="33" x="535" y="214" h="48" row="1" col="1"/>
+  <cut w="21" x="585" y="215" h="47" row="1" col="1"/>
+  <cut w="25" x="620" y="211" h="51" row="1" col="1"/>
+  <cut w="27" x="656" y="211" h="51" row="1" col="1"/>
+  <cut w="27" x="699" y="222" h="39" row="1" col="1"/>
+ </animation>
+ <animation title="Attack_1" delay="150">
+  <cut w="30" x="39" y="287" h="47" row="1" col="1"/>
+  <cut w="37" x="82" y="287" h="47" row="1" col="1"/>
+ </animation>
+ <animation title="Attack_2" delay="150">
+  <cut w="28" x="131" y="285" h="49" row="1" col="1"/>
+  <cut w="45" x="174" y="291" h="43" row="1" col="1"/>
+ </animation>
+ <animation title="Attack_3" delay="150">
+  <cut w="32" x="229" y="289" h="46" row="1" col="1"/>
+ </animation>
+ <animation title="Attack_4" delay="150">
+  <cut w="30" x="277" y="283" h="51" row="1" col="1"/>
+  <cut w="47" x="323" y="290" h="42" row="1" col="1"/>
+  <cut w="41" x="379" y="289" h="36" row="1" col="1"/>
+  <cut w="48" x="429" y="287" h="39" row="1" col="1"/>
+ </animation>
+ <animation title="Attack_5" delay="150">
+  <cut w="42" x="495" y="293" h="35" row="1" col="1"/>
+  <cut w="34" x="553" y="288" h="48" row="1" col="1"/>
+ </animation>
+ <animation title="Attack_6" delay="150">
+  <cut w="32" x="606" y="285" h="51" row="1" col="1"/>
+  <cut w="45" x="651" y="287" h="48" row="1" col="1"/>
+  <cut w="37" x="703" y="292" h="40" row="1" col="1"/>
+ </animation>
+ <animation title="Charge" delay="150">
+  <cut w="75" x="38" y="349" h="72" row="1" col="1"/>
+  <cut w="72" x="123" y="350" h="71" row="1" col="1"/>
+ </animation>
+ <animation title="Guard" delay="150">
+  <cut w="30" x="42" y="443" h="47" row="1" col="1"/>
+ </animation>
+ <animation title="Hit_Face_1" delay="150">
+  <cut w="46" x="122" y="444" h="42" row="1" col="1"/>
+ </animation>
+ <animation title="Hit_Face_2" delay="150">
+  <cut w="29" x="84" y="440" h="49" row="1" col="1"/>
+ </animation>
+ <animation title="Hit_Chest" delay="150">
+  <cut w="28" x="184" y="447" h="36" row="1" col="1"/>
+ </animation>
+ <animation title="Hit_Falling" delay="150">
+  <cut w="41" x="225" y="456" h="26" row="1" col="1"/>
+ </animation>
+ <animation title="KO" delay="150">
+  <cut w="54" x="273" y="463" h="27" row="1" col="1"/>
+ </animation>
+ <animation title="Special_1" delay="150">
+  <cut w="35" x="223" y="376" h="45" row="1" col="1"/>
+  <cut w="35" x="355" y="376" h="45" row="1" col="1"/>
+ </animation>
+ <animation title="Special_2" delay="150">
+  <cut w="35" x="38" y="530" h="45" row="1" col="1"/>
+  <cut w="30" x="89" y="529" h="46" row="1" col="1"/>
+  <cut w="33" x="132" y="530" h="46" row="1" col="1"/>
+  <cut w="37" x="176" y="529" h="48" row="1" col="1"/>
+  <cut w="34" x="269" y="529" h="46" row="1" col="1"/>
+  <cut w="65" x="312" y="518" h="59" row="1" col="1"/>
+ </animation>
+ <animation title="Alt" delay="150">
+  <cut w="29" x="658" y="127" h="51" row="1" col="1"/>
+  <cut w="30" x="695" y="127" h="51" row="1" col="1"/>
+  <cut w="29" x="733" y="127" h="51" row="1" col="1"/>
+ </animation>
+ <animation title="Idle_2" delay="150">
+  <cut w="32" x="298" y="220" h="42" row="1" col="1"/>
+ </animation>
+ <animation title="Right_Air" delay="150">
+  <cut w="46" x="340" y="219" h="39" row="1" col="1"/>
+ </animation>
+ <animation title="Left_Air" delay="150">
+  <cut w="36" x="399" y="216" h="46" row="1" col="1"/>
+ </animation>
+</sprites>

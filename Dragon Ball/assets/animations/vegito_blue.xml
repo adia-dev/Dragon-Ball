@@ -26,7 +26,7 @@
  <animation title="Up" delay="150">
   <cut w="32" x="109" y="346" h="53" row="1" col="1"/>
  </animation>
- <animation title="Maxima" delay="150">
+ <animation title="Idle_Fly" delay="150">
   <cut w="32" x="151" y="341" h="46" row="1" col="1"/>
  </animation>
  <animation title="Down" delay="150">
@@ -88,8 +88,12 @@
  </animation>
  <animation title="Hit_Face_1" delay="150">
   <cut w="43" x="102" y="514" h="39" row="1" col="1"/>
+  <cut w="43" x="102" y="514" h="39" row="1" col="1"/>
+  <cut w="43" x="102" y="514" h="39" row="1" col="1"/>
  </animation>
  <animation title="Hit_Face_2" delay="150">
+  <cut w="30" x="159" y="514" h="39" row="1" col="1"/>
+  <cut w="30" x="159" y="514" h="39" row="1" col="1"/>
   <cut w="30" x="159" y="514" h="39" row="1" col="1"/>
  </animation>
  <animation title="Hit_Uppercut" delay="150">
@@ -120,7 +124,7 @@
   <cut w="39" x="241" y="680" h="45" row="1" col="1"/>
   <cut w="33" x="295" y="680" h="45" row="1" col="1"/>
   <cut w="36" x="340" y="680" h="45" row="1" col="1"/>
-  <cut w="131" x="386" y="647" h="107" row="1" col="1"/>
+  <cut w="67" x="382" y="668" h="57" row="1" col="1"/>
  </animation>
  <animation title="Idle_1" delay="150">
   <cut w="29" x="63" y="200" h="52" row="1" col="1"/>
@@ -132,5 +136,9 @@
   <cut w="141" x="340" y="110" h="142" row="1" col="1"/>
   <cut w="57" x="496" y="185" h="67" row="1" col="1"/>
   <cut w="60" x="571" y="186" h="66" row="1" col="1"/>
+ </animation>
+ <animation title="Charge" delay="150">
+  <cut w="131" x="201" y="141" h="111" row="1" col="1"/>
+  <cut w="141" x="340" y="110" h="142" row="1" col="1"/>
  </animation>
 </sprites>
