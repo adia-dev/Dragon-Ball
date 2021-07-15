@@ -1,0 +1,268 @@
+<!DOCTYPE SpriteDecomposer>
+<sprites image="kefla.png" transparentColor="FFFFFF">
+	<animation title="0_Headshot" delay="150">
+		<cut w="40" x="379" y="25" h="56" row="1" col="1"/>
+	</animation>
+	<animation title="1_Headshot" delay="150">
+		<cut w="40" x="68" y="555" h="56" row="1" col="1"/>
+	</animation>
+	<animation title="2_Headshot" delay="150">
+		<cut w="40" x="68" y="1664" h="56" row="1" col="1"/>
+	</animation>
+	<animation title="Headshot" delay="150">
+		<cut w="40" x="68" y="555" h="56" row="1" col="1"/>
+	</animation>
+	<animation title="0_Idle" delay="150">
+		<cut w="33" x="68" y="408" h="55" row="1" col="1"/>
+	</animation>
+	<animation title="0_Idle_Powered" delay="150">
+		<cut w="28" x="709" y="281" h="52" row="1" col="1"/>
+	</animation>
+	<animation title="0_Idle_Fly" delay="150">
+		<cut w="34" x="201" y="410" h="53" row="1" col="1"/>
+	</animation>
+	<animation title="0_Right_Ground" delay="150">
+		<cut w="34" x="201" y="410" h="53" row="1" col="1"/>
+		<cut w="61" x="247" y="437" h="17" row="1" col="1"/>
+		<cut w="49" x="323" y="416" h="47" row="1" col="1"/>
+		<cut w="83" x="390" y="389" h="96" row="1" col="1"/>
+		<cut w="48" x="503" y="424" h="39" row="1" col="1"/>
+	</animation>
+	<animation title="0_Left_Ground" delay="150">
+		<cut w="34" x="201" y="410" h="53" row="1" col="1"/>
+		<cut w="61" x="247" y="437" h="17" row="1" col="1"/>
+		<cut w="49" x="323" y="416" h="47" row="1" col="1"/>
+		<cut w="83" x="390" y="389" h="96" row="1" col="1"/>
+		<cut w="48" x="503" y="424" h="39" row="1" col="1"/>
+	</animation>
+	<animation title="0_Right_Air" delay="150">
+		<cut w="48" x="503" y="424" h="39" row="1" col="1"/>
+	</animation>
+	<animation title="0_Left_Air" delay="150">
+		<cut w="-48" x="551" y="424" h="39" row="1" col="1"/>
+	</animation>
+	<animation title="0_Up" delay="150">
+		<cut w="34" x="132" y="557" h="54" row="1" col="1"/>
+	</animation>
+	<animation title="0_Down" delay="150">
+		<cut w="33" x="68" y="408" h="55" row="1" col="1"/>
+	</animation>
+	<animation title="Transform_1" delay="150">
+		<cut w="34" x="132" y="557" h="54" row="1" col="1"/>
+		<cut w="53" x="185" y="557" h="54" row="1" col="1"/>
+		<cut w="65" x="248" y="536" h="75" row="1" col="1"/>
+		<cut w="65" x="324" y="533" h="78" row="1" col="1"/>
+		<cut w="53" x="405" y="560" h="51" row="1" col="1"/>
+		<cut w="49" x="476" y="558" h="53" row="1" col="1"/>
+		<cut w="44" x="542" y="552" h="59" row="1" col="1"/>
+		<cut w="63" x="608" y="533" h="78" row="1" col="1"/>
+	</animation>
+	<animation title="0_Charge" delay="150">
+		<cut w="65" x="248" y="536" h="75" row="1" col="1"/>
+		<cut w="65" x="324" y="533" h="78" row="1" col="1"/>
+	</animation>
+	<animation title="1_Taunt" delay="150">
+		<cut w="30" x="68" y="649" h="54" row="1" col="1"/>
+		<cut w="30" x="115" y="649" h="54" row="1" col="1"/>
+		<cut w="36" x="162" y="649" h="54" row="1" col="1"/>
+		<cut w="36" x="162" y="649" h="54" row="1" col="1"/>
+		<cut w="36" x="162" y="649" h="54" row="1" col="1"/>
+		<cut w="30" x="216" y="650" h="53" row="1" col="1"/>
+		<cut w="30" x="267" y="651" h="52" row="1" col="1"/>
+	</animation>
+	<animation title="1_Left_Ground" delay="150">
+		<cut w="30" x="68" y="731" h="49" row="1" col="1"/>
+		<cut w="52" x="115" y="728" h="52" row="1" col="1"/>
+	</animation>
+	<animation title="1_Left_Air" delay="150">
+		<cut w="36" x="115" y="728" h="52" row="1" col="1"/>
+	</animation>
+	<animation title="1_Right_Ground" delay="150">
+		<cut w="36" x="181" y="735" h="44" row="1" col="1"/>
+		<cut w="68" x="222" y="741" h="39" row="1" col="1"/>
+	</animation>
+	<animation title="1_Dash" delay="150">
+		<cut w="51" x="305" y="744" h="29" row="1" col="1"/>
+		<cut w="51" x="362" y="748" h="22" row="1" col="1"/>
+	</animation>
+	<animation title="1_Up" delay="150">
+		<cut w="36" x="110" y="812" h="52" row="1" col="1"/>
+	</animation>
+	<animation title="1_Idle" delay="150">
+		<cut w="30" x="68" y="649" h="54" row="1" col="1"/>
+	</animation>
+	<animation title="1_Idle_Powered" delay="150">
+		<cut w="30" x="390" y="650" h="53" row="1" col="1"/>
+	</animation>
+	<animation title="1_Idle_Fly" delay="150">
+		<cut w="30" x="159" y="811" h="45" row="1" col="1"/>
+	</animation>
+	<animation title="1_Down" delay="150">
+		<cut w="30" x="202" y="811" h="50" row="1" col="1"/>
+	</animation>
+	<animation title="1_Land" delay="150">
+		<cut w="28" x="247" y="807" h="57" row="1" col="1"/>
+	</animation>
+	<animation title="1_Guard" delay="150">
+		<cut w="31" x="112" y="889" h="50" row="1" col="1"/>
+	</animation>
+	<animation title="1_Attack_1" delay="150">
+		<cut w="31" x="68" y="971" h="50" row="1" col="1"/>
+		<cut w="39" x="107" y="969" h="52" row="1" col="1"/>
+		<cut w="37" x="155" y="969" h="52" row="1" col="1"/>
+	</animation>
+	<animation title="1_Attack_2" delay="150">
+		<cut w="40" x="202" y="973" h="48" row="1" col="1"/>
+		<cut w="39" x="250" y="972" h="49" row="1" col="1"/>
+		<cut w="44" x="302" y="975" h="46" row="1" col="1"/>
+		<cut w="41" x="356" y="975" h="46" row="1" col="1"/>
+	</animation>
+	<animation title="1_Attack_3" delay="150">
+		<cut w="30" x="411" y="968" h="53" row="1" col="1"/>
+		<cut w="39" x="450" y="970" h="51" row="1" col="1"/>
+		<cut w="33" x="503" y="970" h="51" row="1" col="1"/>
+		<cut w="31" x="551" y="969" h="52" row="1" col="1"/>
+	</animation>
+	<animation title="1_Attack_4" delay="150">
+		<cut w="30" x="593" y="969" h="51" row="1" col="1"/>
+		<cut w="47" x="632" y="973" h="43" row="1" col="1"/>
+		<cut w="41" x="690" y="976" h="40" row="1" col="1"/>
+	</animation>
+	<animation title="1_Attack_5" delay="150">
+		<cut w="54" x="68" y="1076" h="38" row="1" col="1"/>
+		<cut w="62" x="130" y="1070" h="44" row="1" col="1"/>
+		<cut w="1" x="121" y="1095" h="1" row="1" col="1"/>
+		<cut w="58" x="199" y="1072" h="42" row="1" col="1"/>
+		<cut w="49" x="264" y="1072" h="42" row="1" col="1"/>
+		<cut w="30" x="325" y="1062" h="52" row="1" col="1"/>
+		<cut w="43" x="367" y="1062" h="48" row="1" col="1"/>
+		<cut w="36" x="422" y="1062" h="47" row="1" col="1"/>
+		<cut w="30" x="471" y="1062" h="49" row="1" col="1"/>
+		<cut w="30" x="510" y="1062" h="52" row="1" col="1"/>
+		<cut w="38" x="555" y="1063" h="51" row="1" col="1"/>
+		<cut w="37" x="608" y="1063" h="51" row="1" col="1"/>
+		<cut w="38" x="555" y="1063" h="51" row="1" col="1"/>
+		<cut w="37" x="608" y="1063" h="51" row="1" col="1"/>
+		<cut w="38" x="555" y="1063" h="51" row="1" col="1"/>
+		<cut w="34" x="657" y="1064" h="48" row="1" col="1"/>
+		<cut w="47" x="700" y="1070" h="40" row="1" col="1"/>
+		<cut w="44" x="755" y="1071" h="39" row="1" col="1"/>
+	</animation>
+	<animation title="1_Hit_Face_1" delay="150">
+		<cut w="42" x="114" y="1252" h="49" row="1" col="1"/>
+	</animation>
+	<animation title="1_Hit_Face_2" delay="150">
+		<cut w="35" x="163" y="1252" h="49" row="1" col="1"/>
+	</animation>
+	<animation title="1_Hit_Chest" delay="150">
+		<cut w="31" x="257" y="1261" h="40" row="1" col="1"/>
+	</animation>
+	<animation title="1_Hit_Falling" delay="150">
+		<cut w="48" x="302" y="1267" h="32" row="1" col="1"/>
+	</animation>
+	<animation title="1_KO" delay="150">
+		<cut w="54" x="359" y="1277" h="30" row="1" col="1"/>
+	</animation>
+	<animation title="1_Special_1" delay="150">
+		<cut w="30" x="68" y="1391" h="52" row="1" col="1"/>
+		<cut w="83" x="117" y="1331" h="112" row="1" col="1"/>
+		<cut w="58" x="219" y="1342" h="101" row="1" col="1"/>
+		<cut w="37" x="298" y="1355" h="88" row="1" col="1"/>
+		<cut w="32" x="351" y="1392" h="51" row="1" col="1"/>
+		<cut w="34" x="403" y="1392" h="51" row="1" col="1"/>
+		<cut w="38" x="450" y="1392" h="51" row="1" col="1"/>
+		<cut w="31" x="503" y="1396" h="47" row="1" col="1"/>
+	</animation>
+	<animation title="1_Special_2" delay="150">
+		<cut w="59" x="68" y="1503" h="57" row="1" col="1"/>
+		<cut w="32" x="145" y="1506" h="49" row="1" col="1"/>
+		<cut w="74" x="195" y="1505" h="50" row="1" col="1"/>
+		<cut w="30" x="287" y="1505" h="50" row="1" col="1"/>
+		<cut w="30" x="331" y="1506" h="49" row="1" col="1"/>
+		<cut w="30" x="379" y="1505" h="50" row="1" col="1"/>
+		<cut w="35" x="421" y="1506" h="49" row="1" col="1"/>
+	</animation>
+	<animation title="Transform_2" delay="150">
+		<cut w="33" x="174" y="1670" h="50" row="1" col="1"/>
+		<cut w="53" x="231" y="1667" h="53" row="1" col="1"/>
+		<cut w="65" x="303" y="1642" h="78" row="1" col="1"/>
+		<cut w="82" x="397" y="1596" h="124" row="1" col="1"/>
+		<cut w="80" x="513" y="1596" h="124" row="1" col="1"/>
+		<cut w="82" x="397" y="1596" h="124" row="1" col="1"/>
+		<cut w="80" x="513" y="1596" h="124" row="1" col="1"/>
+	</animation>
+	<animation title="2_Charge" delay="150">
+		<cut w="82" x="397" y="1596" h="124" row="1" col="1"/>
+		<cut w="79" x="514" y="1596" h="124" row="1" col="1"/>
+	</animation>
+	<animation title="2_Right_Ground" delay="150">
+		<cut w="50" x="304" y="1781" h="52" row="1" col="1"/>
+		<cut w="101" x="366" y="1786" h="55" row="1" col="1"/>
+	</animation>
+	<animation title="2_Left_Ground" delay="150">
+		<cut w="50" x="304" y="1781" h="52" row="1" col="1"/>
+		<cut w="101" x="366" y="1786" h="55" row="1" col="1"/>
+	</animation>
+	<animation title="2_Right_Air" delay="150">
+		<cut w="50" x="304" y="1781" h="52" row="1" col="1"/>
+		<cut w="101" x="366" y="1786" h="55" row="1" col="1"/>
+	</animation>
+	<animation title="2_Left_Air" delay="150">
+		<cut w="50" x="304" y="1781" h="52" row="1" col="1"/>
+		<cut w="101" x="366" y="1786" h="55" row="1" col="1"/>
+	</animation>
+	<animation title="2_Idle" delay="150">
+		<cut w="32" x="68" y="1779" h="54" row="1" col="1"/>
+	</animation>
+	<animation title="2_Idle_Fly" delay="150">
+		<cut w="39" x="118" y="1779" h="54" row="1" col="1"/>
+	</animation>
+	<animation title="2_Fire" delay="150">
+		<cut w="39" x="118" y="1779" h="54" row="1" col="1"/>
+		<cut w="38" x="171" y="1779" h="54" row="1" col="1"/>
+		<cut w="68" x="225" y="1755" h="78" row="1" col="1"/>
+	</animation>
+	<animation title="2_Special_1" delay="150">
+		<cut w="36" x="421" y="1957" h="50" row="1" col="1"/>
+		<cut w="35" x="422" y="1957" h="50" row="1" col="1"/>
+		<cut w="32" x="477" y="1957" h="50" row="1" col="1"/>
+		<cut w="30" x="527" y="1957" h="50" row="1" col="1"/>
+		<cut w="30" x="527" y="1957" h="50" row="1" col="1"/>
+		<cut w="30" x="527" y="1957" h="50" row="1" col="1"/>
+		<cut w="34" x="578" y="1955" h="52" row="1" col="1"/>
+		<cut w="230" x="635" y="1864" h="183" row="1" col="1"/>
+	</animation>
+	<animation title="2_Special_2" delay="150">
+		<cut w="32" x="68" y="1779" h="54" row="1" col="1"/>
+		<cut w="39" x="118" y="1779" h="54" row="1" col="1"/>
+		<cut w="38" x="171" y="1779" h="54" row="1" col="1"/>
+		<cut w="53" x="68" y="1961" h="46" row="1" col="1"/>
+		<cut w="42" x="67" y="2080" h="51" row="1" col="1"/>
+		<cut w="51" x="127" y="2078" h="53" row="1" col="1"/>
+		<cut w="49" x="200" y="2080" h="51" row="1" col="1"/>
+		<cut w="87" x="263" y="2073" h="58" row="1" col="1"/>
+		<cut w="63" x="363" y="2077" h="54" row="1" col="1"/>
+		<cut w="35" x="449" y="2079" h="52" row="1" col="1"/>
+		<cut w="259" x="511" y="2079" h="204" row="1" col="1"/>
+	</animation>
+	<animation title="0_KO" delay="150">
+		<cut w="39" x="266" y="2240" h="49" row="1" col="1"/>
+		<cut w="38" x="317" y="2234" h="60" row="1" col="1"/>
+		<cut w="111" x="367" y="2260" h="35" row="1" col="1"/>
+	</animation>
+	<animation title="1_KO" delay="150">
+		<cut w="39" x="217" y="2240" h="49" row="1" col="1"/>
+		<cut w="39" x="266" y="2240" h="49" row="1" col="1"/>
+		<cut w="38" x="317" y="2234" h="60" row="1" col="1"/>
+		<cut w="111" x="367" y="2260" h="35" row="1" col="1"/>
+	</animation>
+	<animation title="2_KO" delay="150">
+		<cut w="39" x="217" y="2240" h="49" row="1" col="1"/>
+		<cut w="39" x="266" y="2240" h="49" row="1" col="1"/>
+		<cut w="38" x="317" y="2234" h="60" row="1" col="1"/>
+		<cut w="111" x="367" y="2260" h="35" row="1" col="1"/>
+	</animation>
+	<animation title="2_Idle_Powered" delay="150">
+		<cut w="38" x="171" y="1779" h="54" row="1" col="1"/>
+	</animation>
+</sprites>

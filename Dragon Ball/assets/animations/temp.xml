@@ -1,0 +1,13 @@
+<!DOCTYPE SpriteDecomposer>
+<sprites image="kefla.png" transparentColor="">
+ <animation title="Animation par défaut" delay="150"/>
+ <animation title="1_Idle" delay="150">
+  <cut w="30" x="68" y="649" h="54" row="1" col="1"/>
+ </animation>
+ <animation title="1_Idle_Powered" delay="150">
+  <cut w="30" x="390" y="650" h="53" row="1" col="1"/>
+ </animation>
+ <animation title="2_Idle_Fly" delay="150">
+  <cut w="39" x="118" y="1779" h="54" row="1" col="1"/>
+ </animation>
+</sprites>

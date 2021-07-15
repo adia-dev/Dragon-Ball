@@ -97,6 +97,19 @@ void Animator::playComboAnimation(const std::string& name, int* comboIndex, bool
 	}
 }
 
+sf::IntRect Animator::getAnimationFrame(const std::string& name, int frame)
+{
+	auto animation = _animations.find(name);
+	if (animation != _animations.end())
+	{
+		if (frame >= 0 && frame < animation->second.frames.size())
+			return animation->second.frames[frame];
+		return animation->second.frames[0];
+	}
+
+	return sf::IntRect(0, 0, 0, 0);
+}
+
 void Animator::flip(bool status)
 {
 	if (_currentAnimation != nullptr) {
@@ -191,6 +204,10 @@ bool Animator::loadAnimation(const std::string& fileName, PATHS path)
 		if (endAnimation != std::string::npos)
 		{
 			write = false;
+			if (animationName.find("Transform") != std::string::npos)
+			{
+				_maxTransformation++;
+			}
 			CreateAnimation(animationName, frames);
 			frames.clear();
 		}

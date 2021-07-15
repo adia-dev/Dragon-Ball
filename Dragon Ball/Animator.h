@@ -63,6 +63,8 @@ public:
 		return "No animation equipped";
 	}
 
+	sf::IntRect getAnimationFrame(const std::string& name, int frame = 0);
+
 	void flip(bool status);
 
 	int getCurrentFrame()
@@ -70,6 +72,7 @@ public:
 		return _currentFrame;
 	}
 
+	int getMaxTransformation() { return _maxTransformation; }
 
 	bool loadAnimation(const std::string& fileName, PATHS path = PATHS::NONE);
 
@@ -84,6 +87,7 @@ private:
 
 	int _currentFrame = 0;
 	float _animationTimer = 0.f;
+	int _maxTransformation = 0;
 
 };
 

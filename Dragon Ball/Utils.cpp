@@ -38,10 +38,9 @@ T Utils::lerp(const T& a, const T& b, const T& t)
 	return a * (1 - t) + b * t;
 }
 
-template<typename T>
-sf::Vector2<T> Utils::vLerp(const sf::Vector2<T>& left, const sf::Vector2<T>& right, const T& t)
+sf::Vector2f Utils::vLerp(const sf::Vector2f& left, const sf::Vector2f& right, const float& t)
 {
-	return sf::Vector2<T>(lerp(left.x, right.x, t), lerp(left.y, right.y, t));
+	return sf::Vector2f(lerp(left.x, right.x, t), lerp(left.y, right.y, t));
 }
 
 template<typename T>

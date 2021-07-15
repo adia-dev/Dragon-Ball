@@ -2,6 +2,26 @@
 
 #include "Vegito.h"
 
+struct KeyActions {
+	std::string name;
+	sf::Sprite s;
+
+	KeyActions()
+	{
+		s.setTexture(AssetManager::GetTexture("kefla.png", PATHS::CHARACTERS));
+		s.setTextureRect(sf::IntRect(68, 408, 33, 55));
+	}
+
+	KeyActions(const std::string& name)
+		:name(name)
+	{
+		s.setTexture(AssetManager::GetTexture("kefla.png", PATHS::CHARACTERS));
+		s.setTextureRect(sf::IntRect(68, 408, 33, 55));
+	}
+
+	float timer = 0.f;
+};
+
 class GameManager
 {
 
@@ -31,6 +51,15 @@ private:
 		return sf::Keyboard::isKeyPressed(key);
 	}
 
+	void controlCharacter(int index) {
+		if (index >= 0 && index < _characters.size()) {
+			for (auto& character : _characters)
+				character->releaseControl();
+			_controlledCharacter = _characters[index];
+			_controlledCharacter->takeControl();
+		}
+	}
+
 	// Variables
 	sf::RenderWindow* _window = nullptr;
 	sf::RectangleShape _ground;
@@ -43,6 +72,10 @@ private:
 	bool _isPlaying = true;
 	int _updateCnt = 0;
 	int _fps = 0;
+	bool _chargeAttack = false;
+	bool _chargeFire = false;
+	float _chargeAttackTimer = 1.f;
+	float _chargeFireTimer = 1.f;
 
 
 	// Instances
@@ -52,5 +85,6 @@ private:
 	Vegito _vegito;
 	Character _test;
 	std::vector<Character*> _characters;
+	Character* _controlledCharacter = nullptr;
 };
 
