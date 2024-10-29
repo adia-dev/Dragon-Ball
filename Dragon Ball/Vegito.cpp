@@ -15,12 +15,12 @@ Vegito::Vegito()
 
 void Vegito::init()
 {
-	_s.setTexture(AssetManager::GetTexture("kefla.png", PATHS::CHARACTERS));
+	_s.setTexture(AssetManager::GetTexture("goku_ssjg.png", PATHS::CHARACTERS));
 
-	_animator->loadAnimation("kefla.xml", PATHS::ANIMATIONS);
+	_animator->loadAnimation("goku_ssjg.xml", PATHS::ANIMATIONS);
 	_animator->playAnimation(std::to_string(_currentTransformation) + "_Idle", true);
 
-	_name = "Kefla";
+	_name = "Vegito Blue";
 	std::cout << _name << std::endl;
 
 	_position = sf::Vector2f(200, 300);

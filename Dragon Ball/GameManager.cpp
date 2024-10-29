@@ -214,14 +214,14 @@ void GameManager::checkInputs()
 	float x = sf::Joystick::getAxisPosition(0, sf::Joystick::X);
 	float y = sf::Joystick::getAxisPosition(0, sf::Joystick::Y);
 
-	_keyMap["Up"] = keyPressed(sf::Keyboard::Z) || y <= -20.f;
-	_keyMap["Left"] = keyPressed(sf::Keyboard::Q) || x <= -20.f;
+	_keyMap["Up"] = keyPressed(sf::Keyboard::W) || y <= -20.f;
+	_keyMap["Left"] = keyPressed(sf::Keyboard::A) || x <= -20.f;
 	_keyMap["Down"] = keyPressed(sf::Keyboard::S) || y >= 20.f;
 	_keyMap["Right"] = keyPressed(sf::Keyboard::D) || x >= 20.f;
 
 	_keyMap["Jump"] = keyPressed(sf::Keyboard::Space) || sf::Joystick::isButtonPressed(0, 0);
-	//_keyMap["Teleport"] = keyPressed(sf::Keyboard::T);
-	//_keyMap["Attack"] = keyPressed(sf::Keyboard::P);
+	_keyMap["Teleport"] = keyPressed(sf::Keyboard::T);
+	_keyMap["Attack"] = keyPressed(sf::Keyboard::P);
 
 	_keyMap["Special_1"] = keyPressed(sf::Keyboard::LShift) || sf::Joystick::isButtonPressed(0, 4);
 	_keyMap["Special_2"] = keyPressed(sf::Keyboard::LControl) || sf::Joystick::isButtonPressed(0, 5);
